@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #222831;
+}
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('./assets/Cocogoose Pro-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Cocogoose Semilight';
+        src: url('./assets/Cocogoose Pro Semilight-trial.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        @font-face {
+            font-family: 'AdobeCleanRegular';
+            src: url('./assets/AdobeCleanRegular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            }

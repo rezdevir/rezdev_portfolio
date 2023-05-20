@@ -1,0 +1,277 @@
+
+$color_pinky:rgb(249, 69, 133);
+$color_white:#ffffff;
+$color_purple:rgb(176, 134, 252);
+$color_green:rgb(82, 231, 16);
+$color_blue:rgb(120, 223, 245);
+.coding_shape{
+    margin-top: -30%;
+  
+}
+.start_c_line{
+    animation-name: start_c_line_anime;
+    animation-duration: 4s;
+
+}
+.l_v_1{
+    height: 200px;
+    border-radius: 2px;
+    width: 10px;
+   margin-left: 10%;
+    background-color: $color_white;
+
+}
+.l_h_1{
+   
+    width: 70px;
+    // width:70%;
+    margin-left: 30px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_pinky;
+    animation-name: l_anime;
+    animation-duration: 2s;
+}
+.l_h_2{
+    width: 100px;
+    // width:30%;
+    margin-left: 80px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_purple;
+    animation-name: l_anime;
+    animation-duration: 2s;
+}
+.l_h_3{
+    width: 80px;
+    // width:22%;
+    margin-left: 110px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_white;
+    animation-name: l_anime;
+    animation-duration: 2s;
+}
+.l_h_4{
+     width: 10px;
+    
+    margin-left: 90px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_white;
+    animation-name: l_anime;
+    animation-duration: 2s;
+}
+// line2 
+.l2_h_1{
+   margin-top: 15px;
+    width: 70px;
+    // width:70%;
+    margin-left: 60px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_pinky;
+    animation-name: l_anime;
+    animation-duration: 2.5s;
+}
+.l2_h_2{
+    width: 130px;
+    // width:30%;
+    margin-left: 80px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_white;
+    animation-name: l_anime;
+    animation-duration: 1s;
+}
+.l2_h_3{
+    width: 100px;
+    // width:22%;
+    margin-left: 140px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_blue;
+    animation-name: l_anime;
+    animation-duration: 3s;
+}
+.l2_h_4{
+     width: 10px;
+    
+    margin-left: 110px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_white;
+    animation-name: l_anime;
+    animation-duration: 2.5s;
+}
+
+// line3
+.l3_h_1{
+    margin-top: 15px;
+     width: 70px;
+     // width:70%;
+     margin-left: 60px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_pinky;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+ .l3_h_2{
+     width: 190px;
+     // width:30%;
+     margin-left: 80px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_green;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+
+ .l3_h_4{
+      width: 10px;
+     
+     margin-left: 200px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_white;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+ // line4
+
+.l4_h_1{
+    margin-top: 15px;
+     width: 70px;
+     // width:70%;
+     margin-left: 60px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_pinky;
+     animation-name: l_anime;
+     animation-duration: 2.5s;
+ }
+ .l4_h_2{
+     width: 110px;
+     // width:30%;
+     margin-left: 80px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_purple;
+     animation-name: l_anime;
+     animation-duration: 1s;
+ }
+ .l4_h_3{
+     width: 120px;
+     // width:22%;
+     margin-left: 120px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_blue;
+     animation-name: l_anime;
+     animation-duration: 3s;
+ }
+ .l4_h_4{
+      width: 10px;
+     
+     margin-left: 130px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_white;
+     animation-name: l_anime;
+     animation-duration: 2.5s;
+ }
+ // line5
+.l5_h_1{
+    margin-top: 15px;
+     width: 70px;
+     // width:70%;
+     margin-left: 140px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_pinky;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+ .l5_h_2{
+     width: 70px;
+     // width:30%;
+     margin-left: 80px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_white;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+ .l5_h_3{
+    width: 90px;
+    // width:30%;
+    margin-left: 80px;
+    height: 10px;
+    border-radius: 2px;
+    background-color:$color_blue;
+    animation-name: l_anime;
+    animation-duration: 2s;
+}
+ .l5_h_4{
+      width: 10px;
+     
+     margin-left: 100px;
+     height: 10px;
+     border-radius: 2px;
+     background-color:$color_white;
+     animation-name: l_anime;
+     animation-duration: 2s;
+ }
+ //line 6
+ .l6_h_3{
+    width: 100px;
+   
+   margin-left: 80px;
+   height: 10px;
+   border-radius: 2px;
+   background-color:$color_purple;
+   animation-name: l_anime;
+   animation-duration: 2s;
+}
+.l6_h_4{
+    width: 10px;
+   
+   margin-left: 110px;
+   height: 10px;
+   border-radius: 2px;
+   background-color:$color_white;
+   animation-name: l_anime;
+   animation-duration: 2s;
+}
+//line 9
+.l9_h_1{
+    width: 10px;
+   margin-top: 5px;
+   margin-left: 30px;
+   height: 10px;
+   border-radius: 2px;
+   background-color:$color_white;
+   animation-name: l_anime;
+   animation-duration: 2s;
+}
+//animation
+@keyframes start_c_line_anime {
+    0%   {
+       
+         transform: translate(-10%,0);
+        
+    }
+
+  }
+
+  @keyframes l_anime {
+    0%   {
+     
+   
+        width: 10px;
+        //  transform: translate(-10%,0);
+        
+    }
+
+  }

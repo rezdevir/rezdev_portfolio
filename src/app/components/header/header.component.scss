@@ -1,15 +1,179 @@
-.unity_logo{
- 
-// margin-left: 20%;
-// margin-right: 60%;
-
-// width: 70%;
-// height: 50%;
-
-// transform: translate(-200%,-100%,-100%);
-// /* UI Properties */
-background-image: url('/assets/Unity-Emblem.png') ;
-
-// opacity: 0.02;
-// opacity: 1;
+.header_{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    
 }
+$color_h3:#3A4750;
+$color_white:#EEEEEE;
+$color_gold:#F6C90E;
+h3{
+    font-family: AdobeCleanRegular;
+color:$color_h3 ;
+font-size: 1.8em;
+}
+.bigger{
+    color: $color_white;
+    font-size: 5em;
+    font-family: Cocogoose;
+    animation: bigger_anime 15s;
+    animation-iteration-count: infinite;
+}
+
+.top-h3{
+    // margin-top:15%;
+    margin-left: 10%;
+
+    margin-bottom: -15px;
+}
+.hero_text::before {
+    font-family: Cocogoose;
+    content: "DEVELOPER";
+    color:$color_gold;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 4px;
+    // margin-top: 3px;
+    font-size: 5em;
+    // height: 175px;
+ text-transform: uppercase;
+
+
+// text-align: center;
+// font: normal normal bold 125px/178px COCOGOOSE;
+letter-spacing: 1px;
+// // color: #F6C90E;
+// text-transform: uppercase;
+// opacity: 1;
+    // font-size: auto;
+    // transform: translate(165px,-90%);
+
+    animation: texting_anime 15s;
+    animation-iteration-count: infinite;
+}
+
+.sshape{
+    margin-left: 10%;
+}
+.ttext{
+    // margin-left: 25%;
+    // margin-top: -3.3%;
+    // padding-left: 10%;
+    transform: translate(190%,-49%);
+}
+.tthero{
+    margin-left: 10%;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    // margin-left: 10%;
+    // width: 33.33%;
+    // padding: 10px;
+    // height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+  
+    // width: 33.33%;
+    // height: 300px; 
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.unity_logo{
+position:absolute;
+// // max-width: 70%;
+// // min-width:50%;
+// height: 50%;
+// background-image: url('/assets/u_l.png');
+// transform: translate(70%,-20%);
+z-index:-1;
+opacity: 0.08;
+margin-top:-20%;
+margin-left: 46%;
+}
+@keyframes texting_anime {
+    0%   {
+        content: "Developer";
+        color: #EEEEEE;
+        }
+    25%  { 
+        content: "Programmer";
+        color:$color_gold;
+        font-size: 4em;
+    }
+    50%  {content: "Game designer";
+        font-size: 4em;
+        color: #EEEEEE; }
+
+    100% { content: "Developer";
+        color:$color_gold;}
+  }
+  @keyframes bigger_anime {
+    0%   {
+  
+        }
+    25%  { 
+
+        font-size: 4em;
+    }
+    50%  {
+        font-size: 4em;
+        color: #EEEEEE; }
+
+    100% { 
+        }
+  }
+
+
+
+  @media only screen and (max-width: 900px) {
+
+.header_{
+    height: auto;
+    width: 90%;
+    // margin-left: 10%;
+    // margin-right: 25%;
+}
+    .hero_text{
+    font-size: 0.5em;
+    animation-iteration-count:0;
+    }
+    .bigger{
+        font-size: 2.5em;
+        animation-iteration-count:0;
+    }
+    .ttext{
+        visibility: hidden;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+.top-h3{
+    margin-left: 1%;
+
+}
+.tthero{
+    margin-left: 1%;
+   
+}
+.column{
+    margin-left: 1%;
+  
+}
+.ttext{
+    margin-left: -20%;
+}
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .unity_logo{
+        width: 40%;
+ height:auto;
+     }
+  }
