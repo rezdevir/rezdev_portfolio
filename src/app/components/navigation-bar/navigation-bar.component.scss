@@ -61,7 +61,9 @@ background-color: #222831;
         }
         .rezdev_logo:hover{
           
-            background-color:  #EEEEEE;
+            // background-color:  #EEEEEE;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 10px;
             .dp{
               display: block;
             }
@@ -70,8 +72,9 @@ background-color: #222831;
         
   }
 .dp{
-  background-color: #65bc46;
+  // background-color: #65bc46;
   min-width: 160px;
+  opacity: 0.9;
   height: auto;
   display: none;
   margin-left: -35px;
