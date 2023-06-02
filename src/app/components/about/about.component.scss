@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  $color_gold:#F6C90E;
+  $color_h3:#3A4750;
+  $color_white:#EEEEEE;
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 10%;
+    // margin-bottom: %;
+    // margin-top: 20%;
+    // background-color: aqua;
+    // margin-top: 50px;
+    // margin-bottom: 160px;
+    padding: 50px;
+    // height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    
+    content: "";
+    // margin-bottom: 50px;
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+      // margin-top: 20%;
+      // margin-bottom: 20px;
+    //   background-color: wheat;
+    }
+  }
+////////////////////////////////
+/// //////////////////////////
+/// //////////////////////////
+/// //////////////////////////
+/// /////////////////////////
+/// /////////////////////////
+/// //////////////////////////
+h2{
+    font-family: 'Cocogoose';
+    color: $color_gold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-left: 10%;
+}
+h1{
+    color: $color_h3;
+    font-family: 'Cocogoose Semilight';
+    margin-left: 10%;
+}
+p{
+    color: $color_white;
+    font-family: 'AdobeCleanRegular';
+    text-align: justify;
+    margin-left: 10%;
+    // margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: $color_gold;
+
+}
+.lang{
+  color: $color_gold;
+}
+.robo_t{
+text-decoration: dotted;
+font-weight: bold;
+text-transform: uppercase;
+}
+// .image_{
+//   // background-color: saddlebrown;
+//   margin-top: 10%;
+// }
+// .textt{
+// height: 700px;
+// }

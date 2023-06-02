@@ -23,7 +23,7 @@ border-right: 10px;
 border-radius: 10px 2px 10px 2px;
 height: 20px;
 width: 120px;
-
+background-color: #222831;
 // text-align: center;
   }
   li {
@@ -53,7 +53,7 @@ width: 120px;
     .rezdev_logo{
     
       text-align: center;
-
+     
       margin-left: auto;
       margin-right: auto;
 
@@ -62,24 +62,32 @@ width: 120px;
         .rezdev_logo:hover{
           
             background-color:  #EEEEEE;
-            .dropdown{
+            .dp{
               display: block;
             }
         }
-    
+ 
         
   }
-
-
+.dp{
+  background-color: #65bc46;
+  min-width: 160px;
+  height: auto;
+  display: none;
+  margin-left: -35px;
+  padding: 12px 16px;
+  margin-top: -10px;
+}
+  
   //dropdown
   .dropdown {
     a{
       color: $color_white;
       text-decoration: none;
     }
-    display: none;
+    // display: none;
     position: absolute;
-    margin-top: 15px;
+    // margin-top: -6px;
     font-family: Cocogoose;
     letter-spacing: normal;
     background-color: $color_h3;
@@ -89,5 +97,5 @@ width: 120px;
     z-index:4;
     box-shadow: $color_white;
     border-radius: 10px;
-    margin-left: -35px;
+    margin-left: -15px;
   }

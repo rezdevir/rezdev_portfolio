@@ -1,0 +1,57 @@
+$color_white:#EEEEEE;
+$color_gold:#F6C90E;
+p{
+    color: $color_white;
+    font-family: 'Cocogoose';
+    margin-top: 10px;
+    margin-bottom: -1px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.line{
+width: 300px;
+// min-width: 100px;
+height: 5px;
+background-color: $color_white;
+border-radius: 2px;
+}
+
+.skill_line::before{
+    width:0px;
+}
+.skill_line{
+background-color: $color_gold;
+
+// width: var(--size);
+// min-width: 100px;
+width:var(--size);
+// animation-name: skill_animation;
+// animation-duration: 2s;
+height: 5px;
+margin-top: -6px;
+border: rgb(40, 40, 40) solid 0.2px;
+// border-right: 2px ;
+}
+.skill_line_anime_on{
+    animation-name: skill_animation;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.test{
+    background-color: red;
+}
+// .skill_line_anime_off{
+
+// }
+@keyframes skill_animation {
+    0%   {
+       
+        width: 0px;
+       
+   }
+   100%   {
+       
+    width:var(--size);
+   
+}
+}

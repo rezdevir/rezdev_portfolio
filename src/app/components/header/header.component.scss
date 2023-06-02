@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     margin-top: 200px;
-    
+    margin-bottom: 10%;
 }
 $color_h3:#3A4750;
 $color_white:#EEEEEE;
@@ -16,8 +16,8 @@ font-size: 1.8em;
     color: $color_white;
     font-size: 5em;
     font-family: Cocogoose;
-    animation: bigger_anime 15s;
-    animation-iteration-count: infinite;
+    // animation: bigger_anime 15s;
+    // animation-iteration-count: infinite;
 }
 
 .top-h3{
@@ -97,36 +97,49 @@ margin-left: 46%;
 }
 @keyframes texting_anime {
     0%   {
-        content: "Developer";
+        content: "mobile Dev";
         color: #EEEEEE;
         }
-    25%  { 
-        content: "Programmer";
+    20%  { 
+        content: "Game Dev";
         color:$color_gold;
-        font-size: 4em;
+        // font-size: 4em;
     }
-    50%  {content: "Game designer";
-        font-size: 4em;
-        color: #EEEEEE; }
+    25%  { 
+        content: "web dev";
+        color:$color_gold;
+        color: #EEEEEE; 
+        // font-size: 4em;
+    }
+    45%  { 
+        content: "iot dev";
+        color:$color_gold;
+        color: #EEEEEE; 
+        // font-size: 4em;
+    }
+    50%  {content: "Developer";
+        // font-size: 4em;
+        }
 
-    100% { content: "Developer";
+    100% { content: "rezdev";
+        
         color:$color_gold;}
   }
-  @keyframes bigger_anime {
-    0%   {
+//   @keyframes bigger_anime {
+//     0%   {
   
-        }
-    25%  { 
+//         }
+//     25%  { 
 
-        font-size: 4em;
-    }
-    50%  {
-        font-size: 4em;
-        color: #EEEEEE; }
+//         // font-size: 4em;
+//     }
+//     50%  {
+//         // font-size: 4em;
+//         color: #EEEEEE; }
 
-    100% { 
-        }
-  }
+//     100% { 
+//         }
+//   }
 
 
 
@@ -140,11 +153,12 @@ margin-left: 46%;
 }
     .hero_text{
     font-size: 0.5em;
-    animation-iteration-count:0;
+//   background-color: #ffffff;
+    animation-play-state: paused;
     }
     .bigger{
         font-size: 2.5em;
-        animation-iteration-count:0;
+    
     }
     .ttext{
         visibility: hidden;
