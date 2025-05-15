@@ -5,7 +5,8 @@ import { DatePipe } from '@angular/common';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 // import { CartService } from '../cart.service';
-import {HttpClient} from '@angular/common/http'
+import {HttpClient,HttpHeaders} from '@angular/common/http'
+
 import { from } from 'rxjs';
 @Component({
   selector: 'app-contact-me',
@@ -27,17 +28,39 @@ export class ContactMeComponent {
     date:this.datepipe.transform((new Date), 'MM/dd/yyyy h:mm:ss'),
   });
 
+
+  // onSubmit(hero: Hero): Observable<Hero> {
+  //   const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar','Access-Control-Allow-Origin' : '*' };
+  //   return this.http.post<Hero>(`contact.php`, this.messageForm.value, headers)
+  //     .pipe(
+  //       catchError(this.handleError('addHero', hero))
+  //     );
+  // }
   onSubmit(): void {
-    // this.http.
-    const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar','Access-Control-Allow-Origin' : '*' };
-    this.http.post<any>('contact.php', {},{headers}).subscribe(data => {
-      this.messageForm.value.name,
-      this.messageForm.value.email,
-      this.messageForm.value.message,
-      this.messageForm.value.date
-  });
-    // this.http.post('http://rezdev.ir/contact.php','');
-    console.warn('Thank you for your message... I respond you as soon as i can !', this.messageForm.value);
+
+
+      //  this.http.post(`contact.php`, { data: this.messageForm.value }).pipe(
+      //   ((res: any) => {
+      //     return res['data'];
+      //   })
+      // );
+
+  const headers= new HttpHeaders()
+  .set('content-type', 'application/x-www-form-urlencoded ; charset=UTF-8')
+  .set('Access-Control-Allow-Origin', '*'); 
+    this.http.post<any>('contact.php', JSON.stringify(this.messageForm.value),{headers}).subscribe(text => {
+      console.log('Message Successfully send.',text);
+  })
+  //   // this.http.
+  // const headers= new HttpHeaders()
+  // .set('content-type', 'application/x-www-form-urlencoded')
+  // .set('Access-Control-Allow-Origin', '*'); 
+  //   // const headers = { 'content-type': 'application/json','Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar','Access-Control-Allow-Origin' : '*' };
+  //   this.http.post<any>('contact.php', JSON.stringify(this.messageForm.value),{headers}).subscribe(text => {
+  //     console.log('Message Successfully send.',text);
+  // })
+  console.log('Message:',JSON.stringify(this.messageForm.value) );
+    // this.http.post('http://rezdev.ir/contact.php',''); 
     this.messageForm.reset();
   }
 //   // onSubmit()

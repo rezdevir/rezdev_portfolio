@@ -65,7 +65,7 @@ p{
 a{
     text-decoration: none;
     color: $color_gold;
-
+  z-index:1px;
 }
 .lang{
   color: $color_gold;
@@ -74,6 +74,10 @@ a{
 text-decoration: dotted;
 font-weight: bold;
 text-transform: uppercase;
+}
+.arrow{
+  z-index: -1;
+
 }
 // .image_{
 //   // background-color: saddlebrown;

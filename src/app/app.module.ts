@@ -16,7 +16,8 @@ import { CardViewComponent } from './components/card-view/card-view.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-import {HttpClientModule,HttpClient} from '@angular/common/http'
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,20 +31,16 @@ import {HttpClientModule,HttpClient} from '@angular/common/http'
     SkillBarComponent,
     CvSectionComponent,
     CardViewComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    HeroDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
-
+    HttpClientModule,
   ],
-  providers: [
-    DatePipe,
-    HttpClient
-  
-  ],
-  bootstrap: [AppComponent]
+  providers: [DatePipe, HttpClient],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

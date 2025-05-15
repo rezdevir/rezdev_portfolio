@@ -1,35 +1,44 @@
-<div class="contactme"> 
-  <h2>
-    if you want to hire me
-  </h2>
-  <h1>
-    call me ! 
-  </h1>
-<div class="line">
-  
-<form   [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-
-    <div>
-      <!-- <label for="name">
+<div id="contact" class="contactme">
+  <h2>if you want to hire me</h2>
+  <h1>call me !</h1>
+  <div class="line">
+    <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+      <div>
+        <!-- <label for="name">
         Name
       </label> -->
-      <input id="name" type="text" formControlName="name" placeholder="Your Name ...">
-    </div>
-  
-    <div>
-      <!-- <label for="email">
+        <input
+          id="name"
+          type="text"
+          formControlName="name"
+          placeholder="Your Name ..."
+        />
+      </div>
+
+      <div>
+        <!-- <label for="email">
         email
       </label> -->
-      <input id="email" type="text" formControlName="email" placeholder="Your Email ..." >
-    </div>
-    <div>
+        <input
+          id="email"
+          type="text"
+          formControlName="email"
+          placeholder="Your Email ..."
+        />
+      </div>
+      <div>
         <!-- <label for="message">
             message
         </label> -->
-        <input class="message" id="message" type="text" formControlName="message" placeholder="Write Your Message ...">
+        <input
+          class="message"
+          id="message"
+          type="text"
+          formControlName="message"
+          placeholder="Write Your Message ..."
+        />
       </div>
-    <button class="button" type="submit"><p class="btn_t">Send</p></button>
-  
-  </form>
-</div>
+      <button class="button" type="submit"><p class="btn_t">Send</p></button>
+    </form>
+  </div>
 </div>
